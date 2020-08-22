@@ -1,0 +1,49 @@
+dFlex{
+    display: flex;
+}
+p,h4{
+    padding: 0;
+    margin: 0;
+}
+.wrap{
+    width: 30%;
+    background: #e6b1f1;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.messages {
+    background: #e6b1f1;
+    /* height: 100vh; */
+    padding: 10px 12px;
+}
+.ava{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.itemUser{
+    display: flex;
+    justify-content: space-between;
+}
+.textUser{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px 8px 8px 4px;
+    height: 51px;
+    padding: 3px;
+}
+.textUser:before{
+    content: '\25C0';
+    position: absolute;
+    left: 78px;
+    /*bottom: 37%;*/
+    top: 17%;
+    color: #fff;
+}
+.name,.messages{
+    line-height: 18px;
+
+}
