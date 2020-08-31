@@ -6,16 +6,19 @@ import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
 
 function HW4() {
     const [text, setText] = useState<string>("");
+    const[error,setError]=useState<string>("");
     const showAlert = () => {
+        text ? setError('') : setError("error")
         if (error) {
             alert("введите текст...");
+            
         } else {
-            alert(text); // если нет ошибки показать текст
+            alert(text); 
             setText('')
         }
     }
     //как не создавая setError с useState cделать error-false
-    const error = text ? "" : "error";
+    // const error = text ? "" : "error";
     const [checked, setChecked] = useState<boolean>(false);
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
     let red = false;
@@ -31,6 +34,7 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
+                    setError={setError}
                     // className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
@@ -46,11 +50,8 @@ function HW4() {
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
-                >
-                    some text {/*// этот текст попадёт в children*/}
+                >some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
-
-                {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 

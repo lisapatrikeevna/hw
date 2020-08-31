@@ -6,7 +6,7 @@ p,h4{
     margin: 0;
 }
 .wrap{
-    width: 30%;
+    /* width: 30%; */
     background: #e6b1f1;
     height: auto;
     flex-wrap: wrap;
@@ -34,14 +34,14 @@ p,h4{
     border-radius: 8px 8px 8px 4px;
     height: 51px;
     padding: 3px;
+    position: relative;
 }
 .textUser:before{
     content: '\25C0';
     position: absolute;
-    left: 78px;
-    /*bottom: 37%;*/
-    top: 17%;
+    left: -12px;
     color: #fff;
+    top: 37px;
 }
 .name,.messages{
     line-height: 18px;

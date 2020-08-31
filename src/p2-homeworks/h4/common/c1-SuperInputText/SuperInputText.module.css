@@ -1,15 +1,18 @@
 .superInput {
  background: transparent;
- color: #000;
+ color: #fff;
+ border: 2px solid #fdfdfd;
+ border-radius: 2px 5px;
 }
-
+.default{
+    border: 2px solid;
+    border-radius: 2px 5px;
+    padding: 5px 2px;
+}
 .errorInput {
     border: 3px solid #080808;
     background: #ad0505e6;
     content: 'where text:-?';
-    color: #fff;
-    border-radius: 2px 5px;
-    padding: 5px 2px;
 }
 
 .error {

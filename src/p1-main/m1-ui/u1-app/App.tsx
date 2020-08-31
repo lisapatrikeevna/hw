@@ -10,14 +10,16 @@ import HW5 from '../../../p2-homeworks/h5/HW5';
 function App() {
     return (
         <div className={s.App}>
-            <div>react homeworks:1</div>
+            <div>react homeworks:hw</div>
             {/* <HW1/>
-            <HW2/> */}
+            <HW2/>
             <HW3/>
-            <HW4/>
+            <HW4/> */}
             <HW5/>
         </div>
     );
 }
 
 export default App;
+//npm install --save @types/react-router-dom
+
