@@ -37,12 +37,16 @@ function NavTile(props:NavTileType){
 function NavBody(){
     return(
         <ul >
-            <li><NavLink to="/hw1">HW1</NavLink></li>
-            <li><NavLink to="/HW2">HW2</NavLink></li>
-            <li><NavLink to="/HW3">HW3</NavLink></li>
-            <li><NavLink to="/HW4">HW4</NavLink></li>
+            {/*<li><NavLink to="/hw1">HW1</NavLink></li>*/}
+            {/*<li><NavLink to="/HW2">HW2</NavLink></li>*/}
+            {/*<li><NavLink to="/HW3">HW3</NavLink></li>*/}
+            {/*<li><NavLink to="/HW4">HW4</NavLink></li>*/}
             <li><NavLink to="/HW6">HW6</NavLink></li>
-            <li><NavLink to="/pre-junior">Home</NavLink></li>
+            <li><NavLink to="/HW7">HW7</NavLink></li>
+            {/*<li><NavLink to="/HW8">HW8</NavLink></li>*/}
+            <li><NavLink to="/pre-junior">Home(PreJunior)</NavLink></li>
+            <li><NavLink to="/PreJuniorPlus">PreJunior+</NavLink></li>
+            <li><NavLink to="/PrePreJunior">Pre-PreJunior</NavLink></li>
         </ul>
     )
 }
