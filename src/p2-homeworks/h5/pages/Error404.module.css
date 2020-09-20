@@ -1,0 +1,17 @@
+.errorPage{
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+.num{
+    font-size: 60px;
+    padding: 40px;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+}
+body{
+    background: #c36fd4;
+    padding: 10px 20px;
+}

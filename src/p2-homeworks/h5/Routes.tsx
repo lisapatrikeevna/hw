@@ -43,7 +43,7 @@ function Routes() {
                 <Route path={PATH.HW7} exact render={() => <HW7/>}/>
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
                 <Route path={PATH.PRE_JUNIOR_PLUS} render={() => <PreJuniorPlus/>}/>
-                <Route path={PATH.PRE_PREJUNIOR} render={() => <PrePreJunior/>}/>
+                {/*<Route path={PATH.PRE_PREJUNIOR} render={() => <PrePreJunior/>}/>*/}
                 //
 
                 {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
