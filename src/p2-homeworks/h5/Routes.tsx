@@ -10,18 +10,20 @@ import HW6 from "../h6/HW6";
 import PreJuniorPlus from "./pages/PreJuniorPlus";
 import PrePreJunior from "./pages/pre-PreJunior";
 import HW7 from "../h7/HW7";
+import HW8 from "../h8/HW8";
 
 
 export const PATH = {
     PRE_JUNIOR: "/pre-junior",
+    PRE_JUNIOR_PLUS: "/PreJuniorPlus",
+    PRE_PREJUNIOR:"/PrePreJunior",
     HW1: "/hw1",
     HW2: "/hw2",
     HW3: "/HW3",
     HW4: "/HW4",
     HW6: "/HW6",
     HW7: "/HW7",
-    PRE_JUNIOR_PLUS: "/PreJuniorPlus",
-    PRE_PREJUNIOR:"/PrePreJunior"
+    HW8: "/HW8",
     // add paths
 }
 
@@ -41,8 +43,14 @@ function Routes() {
                 <Route path={PATH.HW4} exact render={() => <HW4/>}/>
                 <Route path={PATH.HW6} exact render={() => <HW6/>}/>
                 <Route path={PATH.HW7} exact render={() => <HW7/>}/>
+                <Route path={PATH.HW8} exact render={() => <HW8/>}/>
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
                 <Route path={PATH.PRE_JUNIOR_PLUS} render={() => <PreJuniorPlus/>}/>
+
+                
+                
+                
+                
                 {/*<Route path={PATH.PRE_PREJUNIOR} render={() => <PrePreJunior/>}/>*/}
                 //
 

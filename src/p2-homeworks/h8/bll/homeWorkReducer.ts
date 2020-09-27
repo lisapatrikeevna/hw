@@ -1,13 +1,46 @@
-export const homeWorkReducer = (state: any, action: any): any => {
-    switch (action.type) {
-        case "sort": {
+import {initialPeople, initialPeopleType} from "../HW8";
 
-            return state
-        }
-        case "check": {
+type  sortOnNameACType = {
+    type: "sort"
+    payload: "down" | "up"
+}
 
-            return state
+type checkACType = ReturnType<typeof checkACT>
+type actionType = sortOnNameACType | checkACType;
+export const homeWorkReducer = (state: initialPeopleType[] = initialPeople, action: actionType): any => {
+        switch (action.type) {
+            case "sort": {
+                let sortedState: initialPeopleType[] = []
+                if (action.payload === 'up') {
+                    sortedState = [...state].sort((a, b) => {
+                        if (a.name > b.name) {
+                            return 1
+                        }
+                        if (a.name < b.name) {
+                            return -1
+                        }
+                        return 0
+                    })
+                } else {
+                    sortedState = [...state].sort((a, b) => {
+                        if (a.name < b.name) {
+                            return 1
+                        }
+                        if (a.name > b.name) {
+                            return -1
+                        }
+                        return 0
+                    })
+                }
+                return sortedState
+            }
+            case "check":
+                return state.filter((i)=>i.age > action.age)
+            default:
+                return state
         }
-        default: return state
     }
-};
+;
+export const sortOnNameUpAC = () => ({type: "sort", payload: 'up'} as const);
+export const sortOnNameDownAC = () => ({type: "sort", payload: 'down'} as const);
+export const checkACT = () => ({type: "check", age:18} as const);
