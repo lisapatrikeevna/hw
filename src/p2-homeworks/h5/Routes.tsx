@@ -11,6 +11,7 @@ import PreJuniorPlus from "./pages/PreJuniorPlus";
 import PrePreJunior from "./pages/pre-PreJunior";
 import HW7 from "../h7/HW7";
 import HW8 from "../h8/HW8";
+import HW9 from "../h9/HW9";
 
 
 export const PATH = {
@@ -24,6 +25,7 @@ export const PATH = {
     HW6: "/HW6",
     HW7: "/HW7",
     HW8: "/HW8",
+    HW9: "/HW9",
     // add paths
 }
 
@@ -44,6 +46,7 @@ function Routes() {
                 <Route path={PATH.HW6} exact render={() => <HW6/>}/>
                 <Route path={PATH.HW7} exact render={() => <HW7/>}/>
                 <Route path={PATH.HW8} exact render={() => <HW8/>}/>
+                <Route path={PATH.HW9} exact render={() => <HW9/>}/>
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
                 <Route path={PATH.PRE_JUNIOR_PLUS} render={() => <PreJuniorPlus/>}/>
 
