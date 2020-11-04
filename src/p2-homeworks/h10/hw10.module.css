@@ -1,0 +1,220 @@
+#pagePreloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #1a212f;
+    z-index: 100500;
+}
+
+#pagePreloader .windows8 {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+.cssloadContainer * {
+    color: rgb(0,0,0);
+    font-size: 74px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.cssloadContainer {
+    position: absolute;
+    width: 250px;
+    height: 49px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    top: 50%;
+    /*! margin-left: 125px; */
+}
+.cssloadContainer > div {
+    position: absolute;
+    transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+}
+.cssloadL {
+    left: 0px;
+}
+.cssloadI {
+    left: 95px;
+}
+.cssloadN {
+    left: 125px;
+}
+.cssloadG {
+    left: 192px;
+}
+.cssloadSquare,
+.cssloadCircle,
+.cssloadTriangle {
+    left: 29px;
+}
+.cssloadSquare {
+    background: rgb(117,179,209);
+    width: 23px;
+    height: 23px;
+    left: 54px;
+    top: 41px;
+    transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -o-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -ms-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -webkit-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -moz-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    animation-delay: 2.3s;
+    -o-animation-delay: 2.3s;
+    -ms-animation-delay: 2.3s;
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+}
+.cssloadCircle {
+    background: rgb(129,212,125);
+    width: 26px;
+    height: 26px;
+    top: 19px;
+    left: 54px;
+    border-radius: 50%;
+    animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -o-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -ms-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -webkit-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -moz-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+}
+.cssloadTriangle{
+    width: 0;
+    height: 0;
+    left: 54px;
+    top: 66px;
+    border-style: solid;
+    border-width: 0 14.5px 24.1px 14.5px;
+    border-color: transparent transparent rgb(49,53,143) transparent;
+    transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -o-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -ms-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -webkit-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    -moz-animation: cssloadShrinkgrow 3.45s ease-in-out infinite;
+    animation-delay: 1.15s;
+    -o-animation-delay: 1.15s;
+    -ms-animation-delay: 1.15s;
+    -webkit-animation-delay: 1.15s;
+    -moz-animation-delay: 1.15s;
+}
+
+
+@keyframes cssloadShrinkgrow {
+    0% {
+        transform: scale(0);
+    }
+    12.5% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@-o-keyframes cssloadShrinkgrow {
+    0% {
+        -o-transform: scale(0);
+    }
+    12.5% {
+        -o-transform: scale(1);
+    }
+    25% {
+        -o-transform: scale(1);
+    }
+    33% {
+        -o-transform: scale(0);
+    }
+    100% {
+        -o-transform: scale(0);
+    }
+}
+
+@-ms-keyframes cssloadShrinkgrow {
+    0% {
+        -ms-transform: scale(0);
+    }
+    12.5% {
+        -ms-transform: scale(1);
+    }
+    25% {
+        -ms-transform: scale(1);
+    }
+    33% {
+        -ms-transform: scale(0);
+    }
+    100% {
+        -ms-transform: scale(0);
+    }
+}
+
+@-webkit-keyframes cssloadShrinkgrow {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    12.5% {
+        -webkit-transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1);
+    }
+    33% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@-moz-keyframes cssloadShrinkgrow {
+    0% {
+        -moz-transform: scale(0);
+    }
+    12.5% {
+        -moz-transform: scale(1);
+    }
+    25% {
+        -moz-transform: scale(1);
+    }
+    33% {
+        -moz-transform: scale(0);
+    }
+    100% {
+        -moz-transform: scale(0);
+    }
+}
+
+
