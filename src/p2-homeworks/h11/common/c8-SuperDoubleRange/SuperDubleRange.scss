@@ -82,6 +82,6 @@
     }
 }
 
-section.range-slider {
+div.range-slider {
 @include range-slider(300px, 300px, 50px, #F1EFEF, #413F41, left);
 }
