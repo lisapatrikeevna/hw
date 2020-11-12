@@ -1,42 +1,49 @@
-import React,{useState} from "react";
-import { NavLink } from "react-router-dom";
+import React, {useState} from "react";
+import {NavLink} from "react-router-dom";
 import cl from "./Header.module.css"
+import { PATH } from "./Routes";
 
 
 function Header() {
     return (
-        <div >
+        <div>
             <Nav title={"menu"}/>
         </div>
     );
 }
 
 export default Header;
-type NavType={
-    title:string
+type NavType = {
+    title: string
 }
-function Nav(props:NavType){
-    let[collaps, setCollaps]= useState<boolean>(true)
+
+function Nav(props: NavType) {
+    let [collaps, setCollaps] = useState<boolean>(true)
     return (
         <div className={cl.nav}>
-            <NavTile titleValue={props.title} onClick={()=>{setCollaps(!collaps)}}/>
+            <NavTile titleValue={props.title} onClick={() => {
+                setCollaps(!collaps)
+            }}/>
             {!collaps && <NavBody/>}
         </div>
-       
+
     );
 }
-type NavTileType={
-    titleValue :string
-    onClick:()=>void
+
+type NavTileType = {
+    titleValue: string
+    onClick: () => void
 }
-function NavTile(props:NavTileType){
-    return(
-    <h2 onClick={props.onClick}>{props.titleValue}</h2>
+
+function NavTile(props: NavTileType) {
+    return (
+        <h2 onClick={props.onClick}>{props.titleValue}</h2>
     )
 }
-function NavBody(){
-    return(
-        <ul >
+
+function NavBody() {
+    return (
+        <ul>
             <li><NavLink to="/hw1">HW1</NavLink></li>
             <li><NavLink to="/HW2">HW2</NavLink></li>
             <li><NavLink to="/HW3">HW3</NavLink></li>
@@ -47,9 +54,10 @@ function NavBody(){
             <li><NavLink to="/HW9">HW9</NavLink></li>
             <li><NavLink to="/HW10">HW10</NavLink></li>
             <li><NavLink to="/HW11">HW11</NavLink></li>
+            <li><NavLink to="/HW12">HW12</NavLink></li>
             <li><NavLink to="/pre-junior">PreJunior(Home)</NavLink></li>
             <li><NavLink to="/PreJuniorPlus">PreJunior+</NavLink></li>
-            <li><NavLink to="/PrePreJunior">Pre-PreJunior</NavLink></li>
+            {/*<li><NavLink to={PATH.PRE_PREJUNIOR}>Pre-PreJunior</NavLink></li>*/}
         </ul>
     )
 }

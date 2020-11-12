@@ -30,6 +30,8 @@ export const PATH = {
     HW9: "/HW9",
     HW10: "/HW10",
     HW11: "/HW11",
+    HW12: "/HW12",
+    HW13: "/HW13",
     // add paths
 }
 
@@ -54,12 +56,8 @@ function Routes() {
                 <Route path={PATH.HW10} exact render={() => <HW10/>}/>
                 <Route path={PATH.HW11} exact render={() => <HW11/>}/>
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
-                <Route path={PATH.PRE_JUNIOR_PLUS} render={() => <PreJuniorPlus/>}/>
+                <Route path={[PATH.PRE_JUNIOR_PLUS, PATH.HW12, PATH.HW13]} render={() => <PreJuniorPlus/>}/>
 
-                
-                
-                
-                
                 {/*<Route path={PATH.PRE_PREJUNIOR} render={() => <PrePreJunior/>}/>*/}
                 //
 
