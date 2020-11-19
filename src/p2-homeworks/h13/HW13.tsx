@@ -9,7 +9,7 @@ function HW13() {
     const checked = useSelector<AppStoreType, boolean>(state => state.hw13.success);
     const answer = useSelector<AppStoreType, Array<string>>(state => state.hw13.message);
     const setChecked = useCallback((succes: boolean) => {
-        debugger
+        // debugger
         dicpatch(changeRequestAC(succes))
     }, [dicpatch])
     const onChangeChecked = () => {dicpatch(changeRequestTC(checked))}

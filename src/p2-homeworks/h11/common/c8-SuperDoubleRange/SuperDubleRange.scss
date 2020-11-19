@@ -4,7 +4,11 @@
     height: $height;
     float: $float;
     text-align: center;
-
+    input.left[type="range"]{
+        color: #31358f;
+        background: #31358f;
+        -webkit-tap-highlight-color:#31358f;
+    }
     input[type="range"] {
         pointer-events: none;
         position: absolute;
@@ -83,5 +87,5 @@
 }
 
 div.range-slider {
-@include range-slider(300px, 300px, 50px, #F1EFEF, #413F41, left);
+@include range-slider(300px, 30px, 50px, #F1EFEF, #413F41, none);
 }

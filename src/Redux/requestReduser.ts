@@ -44,7 +44,9 @@ export const changeRequestTC = (success: boolean) => {
                 console.log(response.data);
             })
             .catch((err) => {
-                dispatch(answerRequestAC(err))
+                let message=err.response ? err.response.data.errorText : err.message
+                console.log(err.response ? err.response.data.errorText : err.message);
+                dispatch(answerRequestAC(message))
             })
     }
 }

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import cl from "./Header.module.css"
-import { PATH } from "./Routes";
+import {PATH} from "./Routes";
 
 
 function Header() {
